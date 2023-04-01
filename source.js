@@ -11,3 +11,23 @@ function getComputerChoice() {
     }
 }
 
+
+
+document.addEventListener('click', e => {
+    if (e.target.matches('.fireButton')) {
+        console.log('fire');
+    }
+});
+
+document.addEventListener('click', e => {
+    if (e.target.matches('.waterButton')) {
+        console.log('water');
+    }
+});
+
+document.addEventListener('click', e => {
+    if (e.target.matches('.earthButton')) {
+        console.log('earth');
+    }
+});
+
