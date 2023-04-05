@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS Game</title>
-    <script src="source.js"></script>
 </head>
-
 <body>
-    <h1>Battle Of The Elements</h1>
-
+    <h1 class="header">Battle Of The Elements</h1>
+    
     <div class="statusContainer">
-        
-    </div>    
-
-
-
-
-
-    <div class="scoreContainer">
-        <div class="playerScoreBox">
-            <p>Player Score:</p>
-            <div class="playerScore"></div>
+        <div class="compBox">
+            Enemy's Element
+            <div class="imageBox">
+                <img src="/images/FIRE.png" class="compFire grayScale">
+                <img src="/images/WATER.png" class="compWater grayScale">
+                <img src="/images/EARTH.png" class="compEarth grayScale">
+            </div>
         </div>
-        <div class="computerScoreBox">
-            <p>Computer Score:</p>
-            <div class="computerScore"></div>
+        <div class="statusBox">
+            <div class="roundBox">
+                Round: 0
+            </div>
+            <div class="livesBox">
+                Your Lives: 5 | Enemy's Lives 5
+            </div>
+            <div class="winLoseBox">
+                Choose an element to go to battle!
+            </div>
         </div>
     </div>
-
-    <div class = "choiceContainer">
-        <button class="fireButton">Fire</button>
-        <button class="waterButton">Water</button>
-        <button class="earthButton">Earth</button>
+    <div class="choiceContainer">
+        <img src="/images/FIRE.png" class="fire">
+        <img src="/images/WATER.png" class="water">
+        <img src="/images/EARTH.png" class="earth">
     </div>
-
-
-
+    <div class="rulesContainer">
+        <div><span class="fireRule">Fire</span> <span class="scorches"> Scorches </span> <span class="earthRule">Earth</span></div>
+        <div><span class="waterRule">Water</span> <span class="quenches"> Quenches </span> <span class="fireRule">Fire</span></div>
+        <div><span class="earthRule">Earth</span> <span class="absorbs"> Absorbs </span> <span class="waterRule">Water</span></div>
+    </div>
+    <div class="winnerLoser"></div>
+    <button class="playAgain displayNone">Battle Again!</button>
 </body>
-
 </html>
+<script src="source.js"></script>
